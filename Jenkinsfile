@@ -11,7 +11,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing'
-        sh 'jsnkins/test-all.sh'
+        sh 'jenkins/test-all.sh'
       }
     }
 
