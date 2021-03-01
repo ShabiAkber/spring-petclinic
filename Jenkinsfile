@@ -25,7 +25,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'deploying'
-        sh 'java -Dserver.port=8081 jar target/spring petclinic 2.3.1.BUILD SNAPSHOT.jar'
+        sh 'java -Dserver.port=8082 jar target/spring petclinic 2.3.1.BUILD SNAPSHOT.jar'
       }
     }
 
