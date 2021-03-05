@@ -22,12 +22,5 @@ pipeline {
       }
     }
 
-    stage('Deploy') {
-      steps {
-        echo 'Deploying'
-        sh 'java -Dserver.port=8082 jar target/spring petclinic 2.3.1.BUILD SNAPSHOT.jar'
-      }
-    }
-
   }
 }
